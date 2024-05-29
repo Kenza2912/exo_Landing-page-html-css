@@ -282,7 +282,7 @@ article p {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    opacity: 1;
+    /* opacity: 1; */
 
 }
 .affichage{
@@ -328,7 +328,6 @@ article p {
 }
 .blog{
     display: flex;
-    background: rgba(0, 0, 0, 0.541);
     justify-content:center;
     align-content: center;
     height: 100vh;
@@ -359,40 +358,50 @@ article p {
     top: 0;
     left: -200px;
     transition: 0.7s;
-    
+    z-index: 10;
    
 }
 .auteur{
     width: 400px;
     position: relative;
+    overflow: hidden;
     
 }
 .auteur img{
    width: 400px;
+   border-radius: 10px;
   
 }
 .auteur:hover .wrap{
     left: 0;
+    z-index: 10;
+   
+}
+.auteur:hover img{
+    filter: brightness(70%);
+    /* left: 0; */
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .info p{
-    font-size: 20px;
-    background: linear-gradient(120deg,blue, red,orange,green,indigo,violet);
+    font-size: 1em;
+    color: black;
+    padding-top: 20px;
+    /* background: linear-gradient(120deg,blue, red,orange,green,indigo,violet);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+}
+.info a{
+    text-decoration: none;
+    padding-top: 20px;
+    font-size: 1.2em;
+}
+.info h1{
+    margin-top: 20px;
 }
