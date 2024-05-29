@@ -1,0 +1,306 @@
+@import url('https ://fonts.googleapis.com/css2 ?family=Poppins :wght@100 ; 200; 300; 400; 500; 600; 700; 800; 900&display=swap') ;
+
+:root{
+    --font-family: "Poppins";
+    --white-color:white;
+    --light-color:rgb(139, 195, 245);
+    --dark-color:#1294b8;
+    --background: radial-gradient(circle at center, rgb(139, 195, 245), #1294b8);
+}
+
+*{
+   font-family: var(--font-family);
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.top-page {
+   background:var(--background);
+   margin: 0;
+   height: 90vh;
+  
+}
+
+/****************************** header **********************************/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--white-color);
+    padding:30px 30px ;
+   
+}
+
+.nav {
+    width: 700px;  
+}
+
+.nav ul{
+    list-style: none;
+    display: flex; 
+    justify-content: space-evenly;
+    
+}
+.nav ul li a{
+    text-decoration: none;
+    color:var(--white-color);
+    transition: 0.7s;
+}
+.nav ul li a:hover{
+    color: var(--light-color);
+}
+
+.logo {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 100px;
+    
+}
+
+.logo li:hover{
+    color: var(--light-color);
+}
+.logo li{
+    transition: 0.7s;
+}
+
+/************************** landing page **********************************/
+
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+
+}
+article {
+    text-align:justify;
+    padding: 150px 50px;
+}
+
+article h1{
+    font-size: 3em;
+    padding: 10px;
+}
+article p {
+    font-size: 1.5em;
+    line-height: 1.4;
+    padding: 10px;
+}
+/* *****************************form***************************** */
+.subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 300px;
+    
+    
+}
+.subscribe input{
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+  
+
+}
+.subscribe button{
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    right: 5px;
+    background: var(--dark-color);
+    height: 30px;
+    color: var(--white-color);
+    transition: 0.7s;
+}
+
+.subscribe button:hover{
+    background: var(--light-color);
+}
+
+.image {
+    width: 450px;
+    margin-right: 100px;
+}
+
+
+/********************************section 2 products features************************************* */
+
+.container {
+   flex-wrap: wrap;
+   object-fit: cover;
+   font-family: var(--font-family);
+   
+}
+/* ********************texte************************** */
+.texte {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+    height: 20vh;
+    padding: 40px 50px;
+    
+   
+}
+
+.texte p {
+    text-align: center;
+    padding: 10px;
+    color: var(--light-color);
+}
+/* *************************Cards************************* */
+.main{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 30px;
+    color: var(--white-color);
+    
+}
+
+.cards{
+    background: rgb(139, 195, 245); 
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    transition: 0.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      
+}
+.cards:hover{
+    transform:translateY(-20px);
+}
+
+.icones a{
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    
+    
+}
+.icones {
+    padding: 10px 10px;
+}
+
+.cards p{
+    padding: 10px 10px;
+}
+.cards h2{
+    padding: 10px 10px;
+}
+/* *******************************Section team*************************************** */
+
+.peoples{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 60px; 
+
+}
+.people{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.people img{
+    width: 200px;
+    filter: grayscale(1);
+    transition: 0.7s;
+    object-fit: cover;
+    
+      
+}
+
+.cercle{
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+.cercle:hover img, .icones-reseaux:hover+img{
+    filter: grayscale(0);
+    transform: scale(1.1);
+    
+}
+.icones-reseaux{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.9s;
+    z-index: 10;
+ 
+}
+
+.icones-reseaux a{
+    color:black;
+    background-color: white;
+    height: 30px;
+    width: 25px;
+    border-radius: 30px;
+    text-align: center;
+   
+    
+}
+.cercle:hover .icones-reseaux{
+    left: 20px;
+    top: 30px;
+    opacity: 1;
+
+}
+
+
+/* ******************************parallax************************************************ */
+
+.parallax{
+    background-image: url(../CSS/img/parallax.png);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 1;
+
+}
+.affichage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    color: var(--white-color);
+    
+}
+.affichage h1{
+    padding: 30px 30px;
+}
+
+.affichage button{
+
+}
+
+
+
