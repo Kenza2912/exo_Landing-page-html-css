@@ -320,6 +320,36 @@ article p {
     transform: translateY(-5px);
 }
 
+/* ************************************SECTION CLIENT******************************* */
+#CLIENT{
+    height: 80vh; 
+   background: rgba(0, 0, 0, 0.040);
+}
+#CLIENT .texte{
+    padding: 80px;
+    height: 270px;
+    
+}
+.img-client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    
+}
+.img-client img{
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    object-fit: cover;
+    transition: 0.7s;
+}
+.img-client img:hover {
+    opacity: 1;
+    
+}   
+
+
 /* ****************************************section blog************************ */
 .blogs{
     object-fit: cover;
@@ -330,7 +360,7 @@ article p {
     display: flex;
     justify-content:center;
     align-content: center;
-    height: 100vh;
+    height: 80vh;
     gap: 50px;
 }
 .icones_auteur{
@@ -464,12 +494,50 @@ article button{
 }
 
 
+.our-price{
+    background:rgba(111, 158, 199, 0.233) ;
+    height: 80vh;
+    margin: 20px 100px 100px 100px;
+   
+   
+}
+.cards-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.card-price{
+    background: white;
+    width: 260px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+    
+.header-card p{
+    font-size: 3em;
+}
+.header-card p span{
+    font-size: 17px;
+}
+.card-price ul {
+    text-align: left;
+    
+}
+.card-price ul li{
+    list-style: none;
+    display: flex;
+    /* justify-content: space-between;
+  */
+    
+}
 
-
-
-
-
-
+.card-price ul li span{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
