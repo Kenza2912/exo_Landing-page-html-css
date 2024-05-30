@@ -405,3 +405,113 @@ article p {
 .info h1{
     margin-top: 20px;
 }
+
+
+/* ****************************************************section pricing******************************* */
+
+.top-price{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   object-fit: cover;
+}
+article{
+ 
+    width: 600px;
+    height: 500px;
+}
+article h1{
+    font-size: 1.5em;
+}
+article p {
+    color: rgba(0, 0, 0, 0.671);
+    font-size: 1.2em;
+}
+article button{
+    background: var(--dark-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    border: none;
+}
+.top-price img{
+    width: 400px;
+    height: 400px;
+}
+.donnee1{
+    display: flex;
+    flex-direction: column;
+
+}
+.donnee1 h2{
+    font-size: 1.2em;
+}
+
+.donnee2{
+    display: flex;
+    flex-direction: column;
+
+}
+.donnee2 h2{
+    font-size: 1.2em;
+}
+.donnees{
+    display: flex;
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+    gap: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ****************************footer*************************************** */
+#CONTACT{
+    background: rgba(0, 0, 0, 0.877);
+    height: 250px;
+    text-align: center;
+    padding-top: 80px;
+   
+}
+#CONTACT p{
+    color: rgba(255, 255, 255, 0.582);
+    line-height: 2em;
+}
+.icones-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 20px;
+    
+}
+.icones-footer a{
+    text-align: center;
+    padding: 10px 5px;
+    color:rgba(255, 255, 255, 0.582);
+    border: 1px solid rgba(255, 255, 255, 0.582);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
