@@ -662,3 +662,292 @@ article button{
     background: rgba(255, 255, 255, 0.418);
 
 }
+
+
+
+/* ************************************responsive design**************************************** */
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+/* **************************************section 1 top page******************************** */
+
+
+/* ********************************HEADER******************** */
+*{
+    width: 100%;
+
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--white-color);
+   font-size: 0.5em;
+   
+}
+.header h2{
+    font-size: 1em;
+}
+.nav {
+    width: 50%;  
+}
+
+
+.logo {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 20%;
+    
+}
+
+.logo a:hover{
+    color: rgba(0, 0, 0, 0.350);
+}
+.logo a{
+    transition: 0.7s;
+    color: var(--white-color);
+}
+
+/* ****************************LANDING PAGE****************** */
+.landing-page {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 80vh;
+
+}
+article {
+    text-align:left;
+    padding: 10px 10px;
+    width: 700px;
+}
+
+article h1{
+    font-size: 1.5em;
+    width: 300px;
+    padding: 10px 10px;
+    
+}
+article p {
+    font-size: 1em;
+    width: 300px;
+    line-height: 1.4;
+    padding: 10px 10px;
+    text-align: left;
+}
+/* *****************************form***************************** */
+.subscribe {
+    width: auto;
+    
+    
+}
+.subscribe input{   
+    width: 100%;
+    height: 20px;
+  
+
+}
+.subscribe button{
+    right: 0px;
+    height: 20px;
+    color: var(--white-color);
+
+}
+
+.image {
+    width: 250px;
+    margin:auto;
+}
+
+
+/* **************************************section 2 features********************** */
+
+
+#FEATURES {
+    flex-wrap: wrap;
+    object-fit: cover;
+    font-family: var(--font-family);
+    
+ }
+ /* ********************texte************************** */
+ .texte {
+     width: 300px;
+     height: 25vh;
+     margin: auto;
+     text-align: justify;
+     padding: 10px;
+   
+ }
+ .texte h2{
+     font-size: 1em;
+     text-align: justify;
+     margin: 10px;
+ }
+ .texte p {
+     padding: 0px;
+     font-size: 0.8em;
+     margin: 10px;
+ }
+ /* *************************Cards************************* */
+ #FEATURES{
+     height: 200vh;
+ }
+ 
+ .main{
+    flex-direction: column;
+     gap: 15px;  
+     
+ }
+ 
+ .cards{
+     height: 250px;
+     width: 250px;  
+       
+ }
+
+ .cards p{
+    font-size: 1em;
+ }
+ 
+ /* ***********************************************team*************************** */
+
+ .people .text{
+    margin: 20px;
+}
+
+.peoples{
+   flex-direction: column;
+    margin: 0px; 
+
+}
+
+
+.people img{
+    height: 200px;
+    filter: grayscale(0);
+     
+}
+
+.cercle{
+    height: 200px;
+    width: 200px;
+   
+}
+
+.icones-reseaux{
+ 
+    top: 30px;
+    left: 20px;
+    opacity: 1;
+ 
+}
+
+/* **************************************section 4 parallax******************** */
+
+.parallax{
+    background-attachment: scroll;
+    width: 100%;
+
+}
+
+.affichage h2{
+    padding: 15px 0px;
+}
+.affichage p{
+    color: rgba(255, 255, 255, 0.781);
+
+}
+
+/* **************************************SECTION CLIENT************************** */
+#CLIENT .texte{
+    padding: 10px;
+    height: 120px;
+}
+#CLIENT{
+    height: 90vh; 
+   
+}
+
+.img-client {
+   flex-wrap: wrap;
+   justify-content: space-around;
+    padding-top: 10px;
+    gap: 20px;
+}
+
+
+.img-client img{
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+/* **********************************section blog************************************** */
+
+.blogs{
+   flex-direction: column;
+    height: 300vh;
+   
+}
+.auteur img{
+    width: 300px;
+     
+ }
+ .info h2{
+    font-size: 1.2em;
+ }
+ .info p{
+    font-size: 0.9em;
+    text-align: left;
+ }
+.info{
+    width: 300px;
+}
+/* *****************************************section price*************************** */
+
+.top-price{
+    flex-direction: column-reverse;
+ }
+
+ .donnees{
+    gap: 20px;
+    width: 300px;
+}
+.top-price article{
+    width: 300px;
+    height: 500px;
+}
+
+.top-price img{
+    width: 300px;
+    height: 150px;
+}
+.donnee1{
+    width: 100px;
+}
+.donnee2{
+    width: 100px;
+}
+
+
+.our-price{
+    height: 300vh;
+    margin: 0px
+   
+}
+
+
+.cards-price{
+    flex-direction: column;
+    gap: 30px;
+   
+}
+
+
+}
