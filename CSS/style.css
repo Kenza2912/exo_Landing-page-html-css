@@ -358,7 +358,7 @@ article p {
     width: 200px;
     height: 200px;
     opacity: 0.5;
-    object-fit: cover;
+    background-size: cover;
     transition: 0.7s;
 }
 .img-client img:hover {
@@ -682,11 +682,9 @@ and (max-device-width : 480px) {
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: var(--white-color);
-   font-size: 0.5em;
+    padding: 0;
+    font-size: 0.7em;
+    flex-wrap: wrap;
    
 }
 .header h2{
@@ -696,21 +694,17 @@ and (max-device-width : 480px) {
     width: 50%;  
 }
 
-
-.logo {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    width: 20%;
+.nav ul{
+    flex-wrap: wrap;
     
 }
-
-.logo a:hover{
-    color: rgba(0, 0, 0, 0.350);
+.logo {
+    width: 20%;
 }
+
 .logo a{
-    transition: 0.7s;
-    color: var(--white-color);
+    transition: none;
+    
 }
 
 /* ****************************LANDING PAGE****************** */
@@ -722,7 +716,6 @@ and (max-device-width : 480px) {
 
 }
 article {
-    text-align:left;
     padding: 10px 10px;
     width: 300px;
 }
@@ -756,46 +749,44 @@ article p {
     right: 0px;
     height: 20px;
     color: var(--white-color);
-
+    transition: none;
 }
 
 .image {
     width: 250px;
-    margin:auto;
+    padding-left: 50px;
+    
 }
 
 
 /* **************************************section 2 features********************** */
 
 
-#FEATURES {
-    flex-wrap: wrap;
-    object-fit: cover;
-    font-family: var(--font-family);
-    
- }
+
  /* ********************texte************************** */
- .texte {
+ #FEATURES .texte {
      width: 300px;
-     height: 25vh;
+     height: 20vh;
      margin: auto;
      text-align: justify;
      padding: 10px;
+     
    
  }
  .texte h2{
-     font-size: 1em;
+     font-size: 1.3em;
      text-align: justify;
      margin: 10px;
  }
  .texte p {
      padding: 0px;
-     font-size: 0.8em;
+     font-size: 1em;
      margin: 10px;
+     color: rgb(139, 196, 245);
  }
  /* *************************Cards************************* */
  #FEATURES{
-     height: 200vh;
+     height: 190vh;
  }
  
  .main{
@@ -813,15 +804,21 @@ article p {
  .cards p{
     font-size: 1em;
  }
+ .cards:hover{
+    transform: none;
+}
  
  /* ***********************************************team*************************** */
-
+.team .texte{
+    height: 50vh;
+    text-align: left;
+}
  .people .text{
     margin: 20px;
 }
 
 .peoples{
-   flex-direction: column;
+    flex-direction: column;
     margin: 0px; 
 
 }
@@ -846,6 +843,11 @@ article p {
     opacity: 1;
  
 }
+.cercle:hover img, .icones-reseaux:hover+img{
+    
+    transform: none;
+    
+}
 
 /* **************************************section 4 parallax******************** */
 
@@ -858,7 +860,7 @@ article p {
 }
 .affichage {
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.315);
+    background-color: rgba(0, 0, 0, 0.459);
 }
 
 .affichage h2{
@@ -873,11 +875,8 @@ article p {
 }
 .affichage button{
     margin: 20px;
-    height: 20px;
-  
-    
+    height: 20px; 
     background-color: rgba(0, 0, 0, 0.315);
-   
     transition: none;
 }
 
@@ -889,17 +888,19 @@ article p {
 
 /* **************************************SECTION CLIENT************************** */
 #CLIENT .texte{
-    padding: 10px;
-    height: 120px;
+    padding: 0px;
+    padding-top: 40px;
+    height: 35vh;
+    text-align: left;
 }
 #CLIENT{
-    height: 90vh; 
+    height: 100vh; 
    
 }
 
 .img-client {
-   flex-wrap: wrap;
-   justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding-top: 10px;
     gap: 20px;
 }
@@ -909,15 +910,18 @@ article p {
     width: 100px;
     height: 100px;
     opacity: 1;
-    background-size: cover;
+    
 }
 
 /* **********************************section blog************************************** */
 
+#BLOG .texte{
+    text-align: left;
+}
 .blogs{
    flex-direction: column;
    justify-content: flex-start;
-    height: 250vh;
+    height: 240vh;
    
 }
 .auteur img{
@@ -933,9 +937,12 @@ article p {
  }
 .info{
     width: 300px;
+
 }
 .auteur{
     width: 300px;
+    padding-left: 15px;
+    
    
 }
 /* *****************************************section price*************************** */
