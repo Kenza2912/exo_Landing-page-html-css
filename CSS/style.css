@@ -677,8 +677,7 @@ and (max-device-width : 480px) {
 
 /* ********************************HEADER******************** */
 *{
-    width: 100%;
-
+    max-width: 320px;
     
 }
 
@@ -725,7 +724,7 @@ and (max-device-width : 480px) {
 article {
     text-align:left;
     padding: 10px 10px;
-    width: 700px;
+    width: 300px;
 }
 
 article h1{
@@ -852,16 +851,40 @@ article p {
 
 .parallax{
     background-attachment: scroll;
-    width: 100%;
+    background-size: 100% auto;
+    height: 245px;
+    
 
+}
+.affichage {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.315);
 }
 
 .affichage h2{
     padding: 15px 0px;
+   
 }
 .affichage p{
-    color: rgba(255, 255, 255, 0.781);
+    color: rgb(255, 255, 255);
+    font-size: 0.7em;
+    line-height: 1.5em;
 
+}
+.affichage button{
+    margin: 20px;
+    height: 20px;
+  
+    
+    background-color: rgba(0, 0, 0, 0.315);
+   
+    transition: none;
+}
+
+.affichage button:hover{
+    background-color: none;
+    color: none;
+    transform: none;
 }
 
 /* **************************************SECTION CLIENT************************** */
@@ -886,13 +909,15 @@ article p {
     width: 100px;
     height: 100px;
     opacity: 1;
+    background-size: cover;
 }
 
 /* **********************************section blog************************************** */
 
 .blogs{
    flex-direction: column;
-    height: 300vh;
+   justify-content: flex-start;
+    height: 250vh;
    
 }
 .auteur img{
@@ -909,6 +934,10 @@ article p {
 .info{
     width: 300px;
 }
+.auteur{
+    width: 300px;
+   
+}
 /* *****************************************section price*************************** */
 
 .top-price{
@@ -917,16 +946,27 @@ article p {
 
  .donnees{
     gap: 20px;
-    width: 300px;
+    width: 250px;
+    padding: 15px;
+}
+.donnees p{
+    width: 150px;
 }
 .top-price article{
     width: 300px;
     height: 500px;
 }
+.header-card{
+   text-align: center;
+   padding-bottom: 10px;
+}
+
 
 .top-price img{
-    width: 300px;
+    width: 250px;
     height: 150px;
+    background-size: cover;
+    margin: 20px;
 }
 .donnee1{
     width: 100px;
@@ -937,17 +977,53 @@ article p {
 
 
 .our-price{
-    height: 300vh;
+    height: 255vh;
     margin: 0px
    
 }
-
 
 .cards-price{
     flex-direction: column;
     gap: 30px;
    
 }
+
+.card-price dl {   
+
+    line-height: 1.8em;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+   
+}
+.card-price i{
+    width: 20px;
+   
+}
+.card-price dl li{
+   text-align: center;
+
+}
+
+.card-price:hover{
+    transform: none;
+}
+/* ****************************footer*************************************** */
+
+
+#CONTACT{
+    padding-top: 20px;
+   
+}
+#CONTACT p{
+    line-height: 1.8em;
+    
+}
+
+
+
+
+
 
 
 }
