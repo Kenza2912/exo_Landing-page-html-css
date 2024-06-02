@@ -176,7 +176,6 @@ article p {
     height: 400px;
     width: 400px;
     text-align: center;
-    margin-top: 30px;
     border-radius: 10px;
     background: var(--background);
     display: flex;
@@ -1029,8 +1028,204 @@ article p {
 
 
 
+}
+
+ 
+/* Ipad air(portrait and landscape) */ 
+@media only screen 
+and (min-device-width : 481px) 
+and (max-device-width : 1180px) { 
 
 
+*{
+    max-width: 1180px;
+}
+/****************************** header **********************************/
+
+.landing-page {
+    flex-direction: column;
+    height: 80vh;
 
 
 }
+article {
+    text-align:left;
+    padding: 0px 0px;
+    width: 600px;
+}
+article h1{
+    font-size: 2.7em;
+    
+}
+article p {
+    font-size: 1.9em;
+    text-align: justify;
+   
+}
+
+.image {
+    width: 400px;
+    margin-right: 0px;
+    margin-top: 100px;
+}
+.subscribe {
+    max-width: 400px; 
+    
+}
+.subscribe input{
+    font-size: 1.3em;
+
+}
+.subscribe button{
+    right: 0px;  
+    height: 43px;
+    font-size: 1.2em;
+    width: 140px;
+}
+
+/********************************section 2 products features************************************* */
+.texte {
+    width: 700px;
+    padding-top: 100px;
+    height: 30vh;
+  
+}
+.texte h2{
+    font-size: 3em;
+}
+.texte p {
+    padding: 30px;
+    color: rgba(139, 196, 245, 0.829);
+    font-size: 1.8em;
+}
+
+#FEATURES{
+    height: 70vh;
+}
+
+.cards{
+    margin-top: 0px;   
+}
+.cards:hover{
+    transform:none;
+}
+.cards p{
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.733);
+    
+}
+
+
+/* *******************************Section team*************************************** */
+
+.team .texte{
+    height: 37vh;
+    width: 800px;
+    text-align: justify;
+}
+.people .text{
+    line-height: 1.5em;
+    margin: 30px;
+    font-size: 1.5em;
+    width: 250px;
+}
+
+.peoples{
+    flex-wrap: wrap;
+    margin: 50px 60px; 
+    gap: 30px;
+
+}
+.people img{
+    width: 300px;
+    filter: grayscale(0);
+     
+}
+.cercle:hover img, .icones-reseaux:hover+img{
+    filter: none;
+    transform: none;
+    
+}
+
+.icones-reseaux{
+    top: 50px;
+    left: 30px; 
+    height: 50px;
+    width: 50px;
+    opacity: 1;
+ 
+}
+.icones-reseaux a{
+    height: 50px;
+    width: 30px; 
+    font-size: 1.4em;
+}
+
+/* ******************************parallax************************************************ */
+
+.parallax{
+    background-attachment: scroll;
+    background-size: 100% auto;
+
+}
+
+.affichage h2{
+   
+    font-size: 2em;
+}
+.affichage p{
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 1.8em;
+
+}
+
+.affichage button{
+   font-size: 1em;
+    height: 40px;
+    width: 130px;
+}
+
+.affichage button:hover{
+    transform: none;
+}
+
+
+/* ************************************SECTION CLIENT******************************* */
+
+.img-client {
+    flex-wrap: wrap;
+    padding-top: 40px;
+    gap: 40px;
+    
+}
+
+.img-client img{
+    opacity: 1;
+  
+}
+#CLIENT .texte{
+    padding: 80px;
+    height: 30vh;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} 
