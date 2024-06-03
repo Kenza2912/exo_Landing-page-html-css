@@ -134,7 +134,7 @@ article p {
 
 /********************************section 2 products features************************************* */
 
-#FEATURES {
+#features {
    flex-wrap: wrap;
    object-fit: cover;
    font-family: var(--font-family);
@@ -158,7 +158,7 @@ article p {
     font-size: 1.5em;
 }
 /* *************************Cards************************* */
-#FEATURES{
+#features{
     height: 90vh;
 }
 
@@ -337,11 +337,11 @@ article p {
 }
 
 /* ************************************SECTION CLIENT******************************* */
-#CLIENT{
+#client{
     height: 80vh; 
    background: rgba(0, 0, 0, 0.040);
 }
-#CLIENT .texte{
+#client .texte{
     padding: 80px;
     height: 270px;
     
@@ -367,7 +367,7 @@ article p {
 
 
 /* ****************************************section blog************************ */
-#BLOG{
+#blog{
     object-fit: cover;
     /* margin: 70px 60px; */
     
@@ -773,7 +773,7 @@ article p {
 
 
  /* ********************texte************************** */
- #FEATURES .texte {
+ #features .texte {
      width: 300px;
      height: 20vh;
      margin: auto;
@@ -794,7 +794,7 @@ article p {
      color: rgb(139, 196, 245);
  }
  /* *************************Cards************************* */
- #FEATURES{
+ #features{
      height: 190vh;
  }
  
@@ -896,13 +896,13 @@ article p {
 }
 
 /* **************************************SECTION CLIENT************************** */
-#CLIENT .texte{
+#client .texte{
     padding: 0px;
     padding-top: 40px;
     height: 35vh;
     text-align: left;
 }
-#CLIENT{
+#client{
     height: 100vh; 
    
 }
@@ -924,7 +924,7 @@ article p {
 
 /* **********************************section blog************************************** */
 
-#BLOG .texte{
+#blog .texte{
     text-align: left;
 }
 .blogs{
@@ -1127,7 +1127,7 @@ article p {
     font-size: 1.8em;
 }
 
-#FEATURES{
+#features{
     height: 70vh;
 }
 
@@ -1231,7 +1231,7 @@ article p {
     opacity: 1;
   
 }
-#CLIENT .texte{
+#client .texte{
     padding: 80px;
     height: 30vh;
     
