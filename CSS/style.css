@@ -413,9 +413,15 @@ article p {
     overflow: hidden;
     
 }
-.auteur img{
-   width: 400px;
+.img-blog{
+    width: 400px;
+    height: 400px;
+}
+.img-blog img{
+   width: 100%;
+   height: 100%;
    border-radius: 10px;
+   object-fit: cover;
   
 }
 .auteur:hover .wrap{
@@ -424,7 +430,7 @@ article p {
     z-index: 10;
    
 }
-.auteur:hover img{
+.img-blog:hover img{
     filter: brightness(70%);
     /* left: 0; */
 }
@@ -482,9 +488,13 @@ article button{
     height: 30px;
     border: none;
 }
-.top-price img{
+.img-top-price{
     width: 400px;
     height: 400px;
+}
+.img-top-price img{
+    width: 100%;
+    height: 100%;
 }
 .donnee1{
     display: flex;
@@ -564,7 +574,7 @@ article button{
 }
 
 
-.card-price dl li{
+.card-price dl dt{
     display: flex;
     justify-content: space-between;
 
@@ -920,12 +930,15 @@ article p {
 .blogs{
    flex-direction: column;
    justify-content: flex-start;
-    height: 240vh;
+   
+   height: 270vh;
    
 }
-.auteur img{
-    width: 300px;
-     
+.img-blog {
+    width: 280px;
+    height: 280px;
+    margin-left: 5px;
+ 
  }
  .info h2{
     font-size: 1.2em;
@@ -944,13 +957,26 @@ article p {
     
    
 }
+.img-blog img{
+    filter: brightness(70%);
+    
+}
+
+.wrap{
+    width: 220px;
+    top: 10px;
+    left: 25px;
+    transition:none;
+    justify-content: flex-start;
+   
+}
 /* *****************************************section price*************************** */
 
 .top-price{
     flex-direction: column-reverse;
  }
 
- .donnees{
+.donnees{
     gap: 20px;
     width: 250px;
     padding: 15px;
@@ -961,6 +987,7 @@ article p {
 .top-price article{
     width: 300px;
     height: 500px;
+    margin-top: 20px;
 }
 .header-card{
    text-align: center;
@@ -968,11 +995,12 @@ article p {
 }
 
 
-.top-price img{
-    width: 250px;
-    height: 150px;
-    background-size: cover;
-    margin: 20px;
+.img-top-price{
+    width: 300px;
+    height: 115px;
+}
+.img-top-price img{ 
+    object-fit: cover;
 }
 .donnee1{
     width: 100px;
@@ -1006,7 +1034,7 @@ article p {
     width: 20px;
    
 }
-.card-price dl li{
+.card-price dl dt{
    text-align: center;
 
 }
@@ -1210,22 +1238,119 @@ article p {
 }
 
 
+/* ****************************************section blog************************ */
 
 
 
+.blogs{
+    flex-wrap: wrap;
+    height: 190vh;
+    align-content: flex-start;
+    
+}
 
 
+.info p{
+    font-size: 1.4em;
+   
+}
+.info a{
+    
+    font-size: 1.6em;
+}
+.info h2{
+    font-size: 2em;
+}
 
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.wrap{
+    top: 20px;
+    left: 20px;
+    transition: none;    
+    
+}
 
+.img-blog:hover img{
+    filter: none;
+    
+}
 
+.img-blog img{
+    filter: brightness(70%);
+    
+}
+.auteur{
+   width: auto;
+   
+}
 
+.img-blog{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
 
+.info-auteur p{
+    font-size: 1.3em;
+}
+.icones_auteur a{
+   font-size: 1.3em;
+}
+.info{
+    width: 500px;
+    text-align: left;
+}
 
+/* ****************************************************section pricing******************************* */
 
+.top-price{
+    height: 70vh;
+   
+    
+ }
+ .img-top-price{
+    width: 600px;
+    height: 180px;
+}
+ .img-top-price img{
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+    object-fit: cover;
+}
+.top-price article{
+    width: 800px;
+    height: 500px;
+    margin-left: 30px;
+}
 
+article p {
+    font-size: 1.4em;
+}
+.our-price{
+    
+    height: 80vh;
+    margin: 0px;
+   
+   
+}
 
-
-
-
+/* ****************************footer*************************************** */
+#CONTACT{
+    padding-top: 50px;
+   
+}
+#CONTACT p{
+    font-size: 1.4em;
+}
+.icones-footer a{
+    font-size: 2em;
+    width: 60px;
+    height: 60px;
+}
 } 
