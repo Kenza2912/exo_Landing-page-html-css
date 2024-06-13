@@ -22,7 +22,18 @@
    height: 90vh;
   
 }
-
+#to-top{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 1.7em;
+    color: black;
+    background-color: var(--light-color);
+    height: 50PX;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+}
 /****************************** header **********************************/
 .header {
     display: flex;
@@ -339,7 +350,7 @@ article p {
 /* ************************************SECTION CLIENT******************************* */
 #client{
     height: 80vh; 
-   background: rgba(0, 0, 0, 0.040);
+    background: rgba(0, 0, 0, 0.040);
 }
 #client .texte{
     padding: 80px;
@@ -432,7 +443,7 @@ article p {
 }
 .img-blog:hover img{
     filter: brightness(70%);
-    /* left: 0; */
+    
 }
 
 
@@ -446,9 +457,7 @@ article p {
     font-size: 1em;
     color: black;
     padding-top: 20px;
-    /* background: linear-gradient(120deg,blue, red,orange,green,indigo,violet);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    
 }
 .info a{
     text-decoration: none;
@@ -697,7 +706,7 @@ and (max-device-width : 480px) {
    
 }
 .header h2{
-    font-size: 1em;
+    font-size: 2em;
 }
 .menu-burger{
     height: 50px;
@@ -728,6 +737,7 @@ and (max-device-width : 480px) {
     top:50%;
     transform: translate(-50%, -50%) rotate(45deg);
     /* width: 50%; */
+    z-index: 2;
    
     
 }
@@ -738,6 +748,7 @@ and (max-device-width : 480px) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
     /* width: 50%; */
+    z-index: 2;
    
  
    
@@ -769,13 +780,24 @@ and (max-device-width : 480px) {
 }
 .logo {
     width: 20%;
+    display: none;
 }
 
 .logo a{
     transition: none;
     
 }
-
+#to-top{
+    
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.3em;
+    
+    background-color: rgba(143, 143, 206, 0.562);
+    height: 40px;
+    
+ 
+}
 /* ****************************LANDING PAGE****************** */
 .landing-page {
     flex-direction: column;
@@ -1032,6 +1054,14 @@ article p {
 }
 /* *****************************************section price*************************** */
 
+
+.our-price .texte{
+    text-align: justify;
+}
+.our-price .texte h2{
+    text-align: center;
+}
+
 .top-price{
     flex-direction: column-reverse;
  }
@@ -1085,7 +1115,7 @@ article p {
 .card-price dl {   
 
     line-height: 1.8em;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     font-size: 1.2em;
    
